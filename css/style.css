@@ -4,17 +4,85 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
 }
 
-#clock {
+#pic-clk {
+    width: 740px;
+    height: 100px;
+    background: #434343;
+    margin: 20vh auto;
+    padding: 10px;
+    display: flex;
+}
+
+.ck {
+    width: 200px;
+    height: 100px;
+    background: #333;
+    display: inline-flex;
+}
+
+.cc {
+    width: 50px;
+    height: 100px;
+    margin: 0 10px;
+    background: url(../img/number.png);
+    background-position: 50px;
+    background-color: #333;
+}
+
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c0 {
+    width: 100px;
+    height: 100px;
+    background: url(../img/number.png);
+}
+
+.c0 {
+    background-position: 0px;
+}
+.c1 {
+    background-position: -100px;
+}
+.c2 {
+    background-position: -200px;
+}
+.c3 {
+    background-position: -300px;
+}
+.c4 {
+    background-position: -400px;
+}
+.c5 {
+    background-position: -500px;
+}
+.c6 {
+    background-position: -600px;
+}
+.c7 {
+    background-position: -700px;
+}
+.c8 {
+    background-position: -800px;
+}
+.c9 {
+    background-position: -900px;
+}
+
+.v-centor {
+    display: table-cell;
+}
+
+#digi-clk {
+    width: 80%;
     color: #fff;
     font-family: "Cutive Mono";
     font-size: 3rem;
     text-align: center;
     padding: 30px;
-    position: fixed;
+    /* position: fixed; */
     animation: breath 30s linear infinite;
 }
 
@@ -105,5 +173,11 @@ body {
             0 0 200px hsla(360, 100%, 30%, 1);
         box-shadow: inset 0 0 80px hsla(360, 100%, 60%, 1),
             0 0 1200px hsla(360, 100%, 30%, 1);
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    #digi-clk {
+        width: 50%;
     }
 }
