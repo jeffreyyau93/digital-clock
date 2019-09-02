@@ -1,6 +1,8 @@
 body {
     background: #000;
     margin: 0;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +10,100 @@ body {
 
 #clock {
     color: #fff;
-    position: fixed;
-    font-family: 'Cutive Mono';
+    font-family: "Cutive Mono";
     font-size: 3rem;
+    text-align: center;
+    padding: 30px;
+    position: fixed;
+    animation: breath 30s linear infinite;
+}
+
+@keyframes breath {
+    from {
+        color: hsla(0, 100%, 95%, 1);
+        text-shadow: 0 0 40px hsla(0, 100%, 60%, 1),
+            0 0 200px hsla(0, 100%, 30%, 1);
+        box-shadow: inset 0 0 80px hsla(0, 100%, 60%, 1),
+            0 0 1200px hsla(0, 100%, 30%, 1);
+    }
+
+    10% {
+        color: hsla(36, 100%, 95%, 1);
+        text-shadow: 0 0 10px hsla(36, 100%, 60%, 1),
+            0 0 30px hsla(36, 100%, 30%, 1);
+        box-shadow: inset 0 0 40px hsla(36, 100%, 60%, 1),
+            0 0 200px hsla(36, 100%, 30%, 1);
+    }
+
+    20% {
+        color: hsla(72, 100%, 95%, 1);
+        text-shadow: 0 0 40px hsla(72, 100%, 60%, 1),
+            0 0 200px hsla(72, 100%, 30%, 1);
+        box-shadow: inset 0 0 80px hsla(72, 100%, 60%, 1),
+            0 0 1200px hsla(72, 100%, 30%, 1);
+    }
+
+    30% {
+        color: hsla(108, 100%, 95%, 1);
+        text-shadow: 0 0 10px hsla(108, 100%, 60%, 1),
+            0 0 30px hsla(108, 100%, 30%, 1);
+        box-shadow: inset 0 0 40px hsla(108, 100%, 60%, 1),
+            0 0 200px hsla(108, 100%, 30%, 1);
+    }
+
+    40% {
+        color: hsla(144, 100%, 95%, 1);
+        text-shadow: 0 0 40px hsla(144, 100%, 60%, 1),
+            0 0 200px hsla(144, 100%, 30%, 1);
+        box-shadow: inset 0 0 80px hsla(144, 100%, 60%, 1),
+            0 0 1200px hsla(144, 100%, 30%, 1);
+    }
+
+    50% {
+        color: hsla(180, 100%, 95%, 1);
+        text-shadow: 0 0 10px hsla(108, 100%, 60%, 1),
+            0 0 30px hsla(108, 100%, 30%, 1);
+        box-shadow: inset 0 0 40px hsla(108, 100%, 60%, 1),
+            0 0 200px hsla(108, 100%, 30%, 1);
+    }
+
+    60% {
+        color: hsla(216, 100%, 95%, 1);
+        text-shadow: 0 0 40px hsla(216, 100%, 60%, 1),
+            0 0 200px hsla(216, 100%, 30%, 1);
+        box-shadow: inset 0 0 80px hsla(216, 100%, 60%, 1),
+            0 0 1200px hsla(216, 100%, 30%, 1);
+    }
+
+    70% {
+        color: hsla(252, 100%, 95%, 1);
+        text-shadow: 0 0 10px hsla(252, 100%, 60%, 1),
+            0 0 30px hsla(252, 100%, 30%, 1);
+        box-shadow: inset 0 0 40px hsla(252, 100%, 60%, 1),
+            0 0 200px hsla(252, 100%, 30%, 1);
+    }
+
+    80% {
+        color: hsla(288, 100%, 95%, 1);
+        text-shadow: 0 0 40px hsla(288, 100%, 60%, 1),
+            0 0 200px hsla(288, 100%, 30%, 1);
+        box-shadow: inset 0 0 80px hsla(288, 100%, 60%, 1),
+            0 0 1200px hsla(288, 100%, 30%, 1);
+    }
+
+    90% {
+        color: hsla(324, 100%, 95%, 1);
+        text-shadow: 0 0 10px hsla(324, 100%, 60%, 1),
+            0 0 30px hsla(324, 100%, 30%, 1);
+        box-shadow: inset 0 0 40px hsla(324, 100%, 60%, 1),
+            0 0 200px hsla(324, 100%, 30%, 1);
+    }
+
+    to {
+        color: hsla(360, 100%, 95%, 1);
+        text-shadow: 0 0 40px hsla(360, 100%, 60%, 1),
+            0 0 200px hsla(360, 100%, 30%, 1);
+        box-shadow: inset 0 0 80px hsla(360, 100%, 60%, 1),
+            0 0 1200px hsla(360, 100%, 30%, 1);
+    }
 }
